@@ -1,0 +1,329 @@
+h1,
+h2 {
+  font-family: "Cairo";
+  font-size: 60px;
+  line-height: 50px;
+}
+
+h3 {
+  color: #ff481f;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn {
+  background-color: #026735;
+}
+
+header {
+  background-color: #fffeff;
+}
+
+header .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+}
+
+header .header__nav .header__logo .header__img {
+  height: 100px;
+  width: auto !important;
+}
+
+header .header__nav .header__nav-menu .header__enlace-menu {
+  text-decoration: none;
+  padding: 0 21px;
+  color: #581d5a;
+}
+
+header .header__nav .header__nav-menu .btn_menu {
+  border: 2px solid #581d5a;
+  padding: 10px 15px;
+  line-height: 19px;
+}
+
+header .header__nav .header__nav-menu .btn_menu:hover {
+  background: #581d5a;
+  color: #ffffff;
+}
+
+.cover {
+  width: 100%;
+  position: relative;
+}
+
+.cover .cover__presentation {
+  position: absolute;
+  left: 300px;
+  top: 200px;
+}
+
+.cover .cover__presentation h6 {
+  letter-spacing: 3px;
+  color: #581d5a;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cover .cover__presentation h1 {
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.cover .cover__presentation .cover__bottom {
+  background: rgba(82, 76, 76, 0.233);
+  color: white;
+  line-height: 79px;
+  font-size: 50px;
+  white-space: normal;
+  min-width: 800px;
+  max-width: 613px;
+}
+
+.cover .cover__presentation .btn__container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cover .cover__presentation .btn__container .btn {
+  padding: 25px 80px;
+}
+
+.cover .cover__presentation .btn__container .btn .btn__live {
+  text-decoration: none;
+  color: white;
+  font-family: "Cairo";
+  font-weight: bold;
+}
+
+.cover .cover__presentation .btn__container .paragraph__cover {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 20px;
+  font-family: "Cairo";
+  line-height: 23px;
+}
+
+.cover .cover__imagen {
+  background: url("../img/winegrapes.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.description {
+  font-family: "Cairo";
+  padding: 50px;
+}
+
+.description .description__event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.description .description__event .description__container {
+  width: 50%;
+  padding: 30px;
+}
+
+.description .description__event .description__container h2 {
+  margin-bottom: 20px;
+}
+
+.description .description__event .description__container .paragraph__description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #808080;
+}
+
+.description .description__event .description__container .logos__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description .description__event .images__description {
+  width: 50%;
+  position: relative;
+  top: 80px;
+  left: 80px;
+}
+
+.description .description__event .images__description .img__images {
+  width: 70%;
+  top: 80px;
+  left: 0px;
+  z-index: 2;
+  position: absolute;
+}
+
+.description .description__event .images__description .img__images1 {
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  left: 100px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+.lecturers {
+  text-align: center;
+}
+
+.slider {
+  background: white;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.slider::before,
+.slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.program {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.live {
+  text-align: center;
+}
+
+.live h2 {
+  margin-bottom: 50px;
+}
+
+.campus {
+  text-align: center;
+  background: #e6e6e6;
+  padding: 20px 0;
+}
+
+.campus .campus__general {
+  width: 70%;
+  margin: 50px auto;
+  padding: 50px;
+  background: white;
+}
+
+.campus .campus__general .campus__title {
+  margin-bottom: 50px;
+}
+
+.campus .campus__general .campus__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.campus .campus__general .campus__container .campus__description {
+  width: 50%;
+  line-height: 40px;
+  text-align: left;
+}
+
+.campus .campus__general .campus__container .campus__images .campus__img {
+  width: 70%;
+}
+
+.map {
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.schedule {
+  text-align: center;
+  line-height: 50px;
+}
+
+.schedule .aligncenter {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.schedule .aligncenter td {
+  border-bottom: 1px solid #a7a1a1;
+}

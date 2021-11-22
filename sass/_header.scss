@@ -1,0 +1,35 @@
+header {
+  background-color: #fffeff;
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    .header__logo {
+      .header__img {
+        height: 100px;
+        width: auto !important;
+      }
+    }
+    .header__nav-menu {
+      .header__enlace-menu {
+        text-decoration: none;
+        padding: 0 21px;
+        color: rgb(88, 29, 90);
+      }
+      .btn_menu {
+        border: 2px solid #581d5a;
+        padding: 10px 15px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+header {
+  .header__nav .header__nav-menu {
+    .btn_menu:hover {
+      background: #581d5a;
+      color: #ffffff;
+    }
+  }
+}

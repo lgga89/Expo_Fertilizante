@@ -1,0 +1,49 @@
+.description {
+  font-family: "Cairo";
+  padding: 50px;
+  .description__event {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    .description__container {
+      width: 50%;
+      padding: 30px;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+      .paragraph__description {
+        font-size: 18px;
+        line-height: 30px;
+        color: #808080;
+      }
+      .logos__description {
+        display: flex;
+      }
+    }
+  }
+}
+
+.description {
+  .description__event {
+    .images__description {
+      width: 50%;
+      position: relative;
+      top: 80px;
+      left: 80px;
+      .img__images {
+        width: 70%;
+        top: 80px;
+        left: 0px;
+        z-index: 2;
+        position: absolute;
+      }
+      .img__images1 {
+        width: 70%;
+        position: relative;
+        z-index: 1;
+        left: 100px;
+      }
+    }
+  }
+}

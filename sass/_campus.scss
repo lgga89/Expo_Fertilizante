@@ -1,0 +1,28 @@
+.campus {
+  text-align: center;
+  background: #e6e6e6;
+  padding: 20px 0;
+  .campus__general {
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px;
+    background: white;
+    .campus__title {
+      margin-bottom: 50px;
+    }
+    .campus__container {
+      display: flex;
+
+      .campus__description {
+        width: 50%;
+        line-height: 40px;
+        text-align: left;
+      }
+      .campus__images {
+        .campus__img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
