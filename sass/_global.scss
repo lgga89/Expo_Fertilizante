@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  .container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 
 .btn {
   background-color: rgb(2, 103, 53);
