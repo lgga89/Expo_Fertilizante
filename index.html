@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Expo Fertilizante</title>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -28,7 +29,7 @@
                     <a class="header__enlace-menu" href="#programa">PROGRAMA</a>
                     <a class="header__enlace-menu" href="#sede">SEDE</a>
                     <a class="header__enlace-menu" href="#vuelos">VUELOS</a>
-                    <a class="header__enlace-menu" href="#galería">GALERÍA</a>
+                    <a class="header__enlace-menu" href="#galeria">GALERÍA</a>
                     <a class="header__enlace-menu" href="#contacto">CONTACTO</a>
                     <a class="btn_menu header__enlace-menu" href="#conferencias">CONFERENCIAS</a>
                 </div>
@@ -151,19 +152,19 @@
             </div>
         </section>
 
-        <section class="program">
+        <section id="programa" class="program">
             <h3>CULTIVANDO EL ÁRBOL DE LA VIDA</h3>
             <h2>PROGRAMA 2021</h2>
         </section>
         <section class="live">
-            <h3>NO TE LO PIERDAS LA</h3>
+            <h3>NO TE PIERDAS LA</h3>
             <h2>TRANSMISIÓN EN VIVO</h2>
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/Kwa745vmWj0?list=RDKwa745vmWj0"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </section>
-        <section class="campus">
+        <section id="sede" class="campus">
             <div class="campus__general">
                 <div class="campus__title">
                     <h3>¿DÓNDE SE LLEVARÁ A CABO?</h3>
@@ -196,9 +197,8 @@
         </section>
         <section class="map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36093.11064711135!2d-70.29207721682644!3d-18.033512657208643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915acf5e5e369a43%3A0x11f0aad4a80a8517!2sTacna!5e0!3m2!1ses-419!2spe!4v1637566129437!5m2!1ses-419!2spe"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15098.238213949307!2d-96.9279122!3d18.906611!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe724c24cff6b0fe9!2sEx%20Hacienda%20de%20Toxpan!5e0!3m2!1ses!2smx!4v1637631423034!5m2!1ses!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
         <section class="schedule">
             <h2>ITINERARIO DE VUELOS
@@ -323,13 +323,8 @@
                 </tbody>
             </table>
         </section>
-        <section class="gallery">
 
-        </section>
-
-
-
-        <section class="gallery">
+        <section id="galeria" class="gallery">
             <div class="gallery__title">
                 <h3>GALERÍA 2021</h3>
                 <h2>PARRAS DE LA FUENTE, COAH</h2>
@@ -434,14 +429,56 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="footer__logo">
-                <img src="img/" alt="">
-                <img src="img/ExpoFertilizantes_logo.png" width="200px" alt="">
+        <section class="inscription">
+            <div class="inscription__container">
+                <div class="title__inscription">
+                    <h3>REGISTRATE</h3>
+                    <h2>ASEGURA TU LUGAR</h2>
+                </div>
+                <div class="btn__container">
+                    <a class="btn__inscription" target="_blank"
+                        href="https://forms.gle/9yAuMBL2LwYe4fKs5">INSCRIPCIÓN</a>
+                </div>
             </div>
-            <div class="footer__contact">
+        </section>
+        <section id="contacto" class="contact">
+            <h2>CONTACTO</h2>
+            <div class="contact__container">
+                <div class="contact__left">
+                    <div class="contact__logo">
+                        <img src="img/ExpoFertilizantes_logo.png" alt="">
+                    </div>
+                    <div class="contact__complement">
+                        <img src="img/complementario_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="contact__right">
+                    <div class="contact__information">
+                        <h4><i class="fas fa-check"></i>Rafael Rodriguez</h4>
+                        <p> 667 201 9805</p>
+                        <p>anacofer@anacofer.com.mx</p>
+                        <br>
+                        <h4><i class="fas fa-check"></i>Mariana Hernandez </h4>
+                        <p>33 1116 2652</p>
+                        <p>gerencia@anacofer.com.mx</p>
+                        <br>
+                        <h4><i class="fas fa-check"></i>Diana Lopez </h4>
+                        <p> 663 388 4333</p>
+                        <p>dianazevada10@gmail.com</p> <br>
+                        <h4><i class="fas fa-check"></i>Odalis Tapia </h4>
+                        <p> 667 182 0354</p>
+                        <p>anacofer@anacofer.com.mx</p>
+                    </div>
+                    <div class="contact__information">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            </div>
+
+        <footer>
+            <p>Copyright ©</p>
+            <p>Desarrollado por lgga</p>
         </footer>
 </body>
 <script src="js/gallery.js"></script>
