@@ -13,15 +13,19 @@
     }
     .campus__container {
       display: flex;
-
+      align-items: center;
       .campus__description {
         width: 50%;
         line-height: 40px;
         text-align: left;
+        .paragraph__campus {
+          font-size: 20px;
+        }
       }
       .campus__images {
         .campus__img {
           width: 70%;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
       }
     }

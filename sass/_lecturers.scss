@@ -18,6 +18,8 @@
 
 .lecturers {
   text-align: center;
+  margin: 60px 0;
+  padding-top: 50px;
 }
 
 .slider {
@@ -28,6 +30,10 @@
   overflow: hidden;
   position: relative;
   width: 960px;
+  margin-top: 25px;
+  img {
+    height: 120px;
+  }
 }
 .slider::before,
 .slider::after {
@@ -51,8 +57,9 @@
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(250px * 14);
+  width: calc(25px * 4);
 }
+
 .slider .slide {
   height: 100px;
   width: 250px;
