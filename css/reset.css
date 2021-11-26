@@ -32,12 +32,10 @@ strong {
 }
 
 ::-moz-selection {
-  background-color: var(--negro);
   color: var(--blanco);
 }
 
 ::selection {
-  background-color: var(--negro);
   color: var(--blanco);
 }
 
@@ -51,6 +49,5 @@ button {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-  background-color: transparent;
   display: block;
 }

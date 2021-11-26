@@ -21,6 +21,12 @@
       }
       .logos__description {
         display: flex;
+        justify-content: space-evenly;
+        .img__description {
+          width: 50%;
+          height: 60px;
+          margin: 30px;
+        }
       }
     }
   }

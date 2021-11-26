@@ -159,6 +159,15 @@ header .header__nav .header__nav-menu .btn_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.description .description__event .description__container .logos__description .img__description {
+  width: 50%;
+  height: 60px;
+  margin: 30px;
 }
 
 .description .description__event .images__description {
@@ -276,6 +285,10 @@ header .header__nav .header__nav-menu .btn_menu {
   text-align: center;
 }
 
+.wrap .tabs {
+  color: #e6e6e6;
+}
+
 ul.tabs {
   width: 100%;
   background: #cac6c6;
@@ -288,7 +301,6 @@ ul.tabs {
           justify-content: center;
   font-weight: 700;
   font-style: normal;
-  color: #0e0e0e;
 }
 
 ul.tabs li {
@@ -310,12 +322,8 @@ ul.tabs li a {
   background: #036836;
 }
 
-.active:hover {
-  background: #036836;
-}
-
 .tab-text:hover {
-  color: violet;
+  color: white;
 }
 
 .secciones {
@@ -355,8 +363,12 @@ tr:hover td {
   color: white;
 }
 
+.tab-text {
+  color: black;
+}
+
 li:hover .tab-text {
-  color: white;
+  color: #fff;
 }
 
 @media screen and (max-width: 700px) {
@@ -3461,7 +3473,9 @@ li:hover .tab-text {
 }
 
 .campus .campus__general .campus__container .campus__description .paragraph__campus {
-  font-size: 20px;
+  font-size: 16px;
+  color: #808080;
+  text-align: justify;
 }
 
 .campus .campus__general .campus__container .campus__images .campus__img {
@@ -3483,10 +3497,10 @@ li:hover .tab-text {
 }
 
 .gallery .gallery__title {
-  margin: 50px 0;
+  margin: 100px 0 50px;
 }
 
-.gallery__container {
+.gallery .gallery__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3511,7 +3525,12 @@ li:hover .tab-text {
   transition: 0.6s ease;
 }
 
-.gallery__container .photo__gallery img {
+.photo__gallery:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.photo__gallery img {
   width: 400px;
   height: 400px;
   -o-object-fit: cover;
@@ -3519,12 +3538,7 @@ li:hover .tab-text {
   border-radius: 5px;
 }
 
-.gallery__container .photo__gallery:hover {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-}
-
-.overlay {
+.photo__gallery .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3533,18 +3547,6 @@ li:hover .tab-text {
   -webkit-transition: 0.55s ease;
   transition: 0.55s ease;
   overflow: hidden;
-}
-
-.overlay h2 {
-  color: #fff;
-  font-size: 25px;
-  font-family: "Josefin Sans", sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .photo__gallery:hover .overlay {
@@ -3588,7 +3590,10 @@ li:hover .tab-text {
   background-color: rgba(211, 211, 211, 0.459);
 }
 
-/**/
+.contenedor-modal.active {
+  background-color: rgba(211, 211, 211, 0.459);
+}
+
 .contact {
   margin-top: 50px;
 }

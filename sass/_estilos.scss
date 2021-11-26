@@ -8,6 +8,9 @@
     margin-bottom: 30px;
     text-align: center;
   }
+  .tabs {
+    color: #e6e6e6;
+  }
 }
 
 ul.tabs {
@@ -18,7 +21,6 @@ ul.tabs {
   justify-content: center;
   font-weight: 700;
   font-style: normal;
-  color: rgb(14, 14, 14);
 }
 
 ul.tabs li {
@@ -35,15 +37,13 @@ ul.tabs li a {
   padding: 10px 0px;
   border-right: 2px solid #ffffff;
 }
+
 .active {
-  background: #036836;
-}
-.active:hover {
   background: #036836;
 }
 
 .tab-text:hover {
-  color: violet;
+  color: rgb(255, 255, 255);
 }
 
 .secciones {
@@ -83,8 +83,12 @@ tr:hover td {
   background-color: #369681;
   color: white;
 }
+.tab-text {
+  color: black;
+}
+
 li:hover .tab-text {
-  color: white;
+  color: #fff;
 }
 
 @media screen and (max-width: 700px) {
