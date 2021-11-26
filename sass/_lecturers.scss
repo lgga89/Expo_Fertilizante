@@ -18,8 +18,11 @@
 
 .lecturers {
   text-align: center;
-  margin: 60px 0;
-  padding-top: 50px;
+
+  .lecturers__titles {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .slider {
