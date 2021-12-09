@@ -15,6 +15,10 @@
   }
 }
 
+ul {
+  padding: 0;
+}
+
 ul.tabs {
   width: 100%;
   background: rgb(202, 198, 198);
@@ -30,7 +34,6 @@ ul.tabs li {
 }
 
 ul.tabs li a {
-  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 20px;
   text-align: left;
@@ -67,7 +70,7 @@ table {
 
 th,
 td {
-  padding: 20px;
+  //padding: 20px;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -107,10 +110,19 @@ li:hover .tab-text {
   }
 
   ul.tabs li a .tab-text {
-    display: none;
+    //display: none;
   }
 
   .secciones article {
     padding: 20px;
+  }
+}
+
+@media (min-width: 450px) {
+  td {
+    padding: 30px 0;
+  }
+  li {
+    line-height: 25px;
   }
 }

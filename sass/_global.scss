@@ -1,18 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
   scroll-behavior: smooth;
-}
-body {
-  .container {
-    max-width: 2500px;
-    margin: 0 auto;
+  color: #000000;
+  font-family: "cairo";
+  body {
+    margin: 0;
     padding: 0;
-    font-family: "cairo";
+    box-sizing: border-box;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-family: "Cairo";
   }
 }
 
-.btn {
-  background-color: rgb(2, 103, 53);
+@media (min-width: 800px) {
+  body {
+    h2 {
+      font-family: "Cairo";
+      font-size: 90px;
+      line-height: 70px;
+    }
+  }
 }

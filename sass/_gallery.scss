@@ -15,7 +15,7 @@
 
 .gallery__container {
   .photo__gallery {
-    width: 400px;
+    width: 300px; // 400 responsive
     height: 400px;
     position: relative;
     margin-bottom: 35px;
@@ -30,7 +30,7 @@
 
 .photo__gallery {
   img {
-    width: 400px;
+    width: 300px; // para jugar con el tamaño en el r4sponsive
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
@@ -84,4 +84,26 @@
 
 .contenedor-modal.active {
   background-color: rgba(211, 211, 211, 0.459);
+}
+
+@media (min-width: 480px) {
+  .gallery__container {
+    .photo__gallery {
+      width: 400px; // 400 responsive
+      height: 400px;
+      position: relative;
+      margin-bottom: 35px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+      transition: 0.6s ease;
+    }
+    .photo__gallery {
+      img {
+        width: 400px; // para jugar con el tamaño en el r4sponsive
+        height: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+  }
 }

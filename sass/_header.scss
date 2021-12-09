@@ -1,26 +1,31 @@
 header {
-  background-color: #fffeff;
-  .header__nav {
+  background: #fff;
+  position: relative;
+  z-index: 3;
+
+  .container__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 20px;
+
+    //max-width: 1200px;
+    //margin: 0 auto;
     .header__logo {
-      .header__img {
-        height: 100px;
-        width: auto !important;
+      margin: 10px 0;
+      img {
+        width: 80px;
       }
     }
+  }
+}
 
-    .header__nav-menu {
-      .header__enlace-menu {
-        text-decoration: none;
-        padding: 0 21px;
-        color: rgb(88, 29, 90);
-      }
-      .btn_menu {
-        padding: 10px 15px;
-        line-height: 19px;
+@media (min-width: 480px) {
+  header {
+    padding: 0 16px;
+    .container__header {
+      .header__logo {
+        img {
+          width: 150px;
+        }
       }
     }
   }

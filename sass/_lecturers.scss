@@ -32,7 +32,7 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  //width: 960px;
   margin-top: 25px;
   img {
     height: 120px;
@@ -66,4 +66,12 @@
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+
+@media (min-width: 1200px) {
+  .lecturers {
+    .slider {
+      width: 960px;
+    }
+  }
 }

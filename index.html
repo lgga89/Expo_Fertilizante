@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Expo Fertilizante</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,26 +15,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Ubuntu&display=swap" rel="stylesheet">
 
+    <title>ExpoFertilizante</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <nav class="header__nav">
-                <div class="header__logo">
-                    <img class="header__img" src="img/ExpoFertilizantes_logo.png" alt="">
-                </div>
-                <div class="header__nav-menu">
-                    <a class="header__enlace-menu" href="#inicio">INICIO</a>
-                    <a class="header__enlace-menu" href="#programa">PROGRAMA</a>
-                    <a class="header__enlace-menu" href="#sede">SEDE</a>
-                    <a class="btn_menu header__enlace-menu" href="#conferencias">CONFERENCISTAS</a>
-                    <a class="header__enlace-menu" href="#galeria">GALERÍA</a>
-                    <a class="header__enlace-menu" href="#contacto">CONTACTO</a>
-
-                </div>
+    <header>
+        <div class="container  container__header">
+            <div class=" header__logo">
+                <a href="index.html"><img src="img/ExpoFertilizantes_logo.png" alt=""></a>
+            </div>
+            <div class="menu__hamburger ">
+                <input type="checkbox" id="menu-bar">
+                <label class="hamburger__container" for="menu-bar">
+                    <div id="hamburger__wrapper" class="">
+                        <p class="burger"></p>
+                    </div>
+                </label>
+                <nav class="menu__dropdown">
+                    <div class="menu_items">
+                        <a class="items" href="#Inicio">INICIO</a>
+                        <a class="items" href="#Programa">PROGRAMA</a>
+                        <a class="items" href="#Sede">SEDE</a>
+                        <a class="items" href="#Conferencistas">CONFERENCISTAS</a>
+                        <a class="items" href="#Galeria">GALERÍA</a>
+                        <a class="items" href="#Contacto">CONTACTO</a>
+                    </div>
+                </nav>
+            </div>
+            <nav class="menu">
+                <ul class="menu__container">
+                    <li><a id="menu__items" href="#Inicio">Inicio</a></li>
+                    <li><a id="menu__items" href="#Programa">Programa</a></li>
+                    <li><a id="menu__items" href="#Sede">Sede</a></li>
+                    <li><a id="menu__items" href="#Conferencistas">Conferencistas</a></li>
+                    <li><a id="menu__items" href="#Galeria">Galería</a></li>
+                    <li><a id="menu__items" href="#Contacto">Contacto</a></li>
+                </ul>
             </nav>
-        </header>
+        </div>
+    </header>
+
+    <main>
         <section class="cover">
             <div class="cover__presentation">
                 <div class="cover__bottom">
@@ -55,6 +76,10 @@
             <div class="cover__imagen">
             </div>
         </section>
+
+
+
+
         <section class="description">
             <div class="description__event">
                 <div class="description__container">
@@ -78,9 +103,9 @@
                 </div>
             </div>
         </section>
-        <section id="conferencias" class=" lecturers ">
-            <div class=" lecturers__titles">
 
+        <section id="Conferencias" class=" lecturers ">
+            <div class=" lecturers__titles">
                 <h2>MIEMBROS ANACOFER</h2>
             </div>
             <div class="slider">
@@ -140,13 +165,10 @@
             </div>
         </section>
 
-
-        <div class="wrap" id="programa">
+        <div class="wrap" id="Programa">
             <div class="program__title">
-
                 <h2>PROGRAMA 2021</h2>
             </div>
-
             <ul class="tabs">
                 <li>
                     <a href="#tab1">
@@ -169,7 +191,6 @@
                 </li>
 
             </ul>
-
             <div class="secciones">
                 <article id="tab1">
                     <table>
@@ -382,8 +403,7 @@
 
             </div>
         </div>
-
-        <section id="sede" class="campus">
+        <section id="Sede" class="campus">
             <div class="campus__general">
                 <div class="campus__title">
                     <h3>¿DÓNDE SE LLEVARÁ A CABO?</h3>
@@ -414,12 +434,13 @@
                 </div>
             </div>
         </section>
+
         <section class="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15098.238213949307!2d-96.9279122!3d18.906611!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe724c24cff6b0fe9!2sEx%20Hacienda%20de%20Toxpan!5e0!3m2!1ses!2smx!4v1637631423034!5m2!1ses!2smx"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
-        <section id="galeria" class="gallery">
+        <section id="Galeria" class="gallery">
 
             <div class="gallery__title">
 
@@ -525,22 +546,21 @@
                 </div>
             </div>
         </section>
-
-        <section id="contacto" class="contact">
+        <section id="Contacto" class="contact">
             <h2>CONTACTO</h2>
             <div class="contact__container">
                 <div class="contact__left">
                     <div class="contact__logo">
-                        <img src="img/ExpoFertilizantes_logo.png" alt="">
+                        <img class="img__contact" src="img/ExpoFertilizantes_logo.png" alt="">
                     </div>
                     <div class="contact__complement">
-                        <img src="img/logo_Agricultura.png" alt="">
+                        <img class="img__contact" src="img/logo_Agricultura.png" alt="">
                     </div>
                     <div class="contact__complement">
-                        <img src="img/logo_vera.png" alt="">
+                        <img class="img__contact" src="img/logo_vera.png" alt="">
                     </div>
                     <div class="contact__complement">
-                        <img src="img/Anacof.png" alt="">
+                        <img class="img__contact" src="img/Anacof.png" alt="">
                     </div>
                 </div>
                 <div class="contact__right">
@@ -565,6 +585,14 @@
                 </div>
             </div>
         </section>
+
+    </main>
+
+
+    <script>const wrapper = document.getElementById('hamburger-wrapper')
+        wrapper.addEventListener("click", () => {
+            wrapper.classList.toggle("open")
+        })</script>
 </body>
 <script src="js/gallery.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
